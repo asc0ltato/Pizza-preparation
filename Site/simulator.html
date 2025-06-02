@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Симулятор</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/pizza_icon.ico">
+    <link rel="stylesheet" href="styles/main_all.css" />
+    <link rel="stylesheet" href="/styles/simulator.css" />
+    <link rel="shortcut icon" href="/Build/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="/Build/TemplateData/style.css">
+    <script src="/Build/TemplateData/UnityProgress.js"></script>
+    <script src="/Build/Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "/map/Build/Build/Build.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <div class="menu-bur">
+          <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+          <label for="burger-checkbox" class="burger"></label>
+          <ul class="menu-list">
+            <li><a href="main.html" class="menu-item">Главная</a></li>
+            <li></li>
+            <li><a href="theory.html" class="menu-item">Теория</a></li>
+            <li></li>
+            <li><a href="Map.html" class="menu-item">Структура</a></li>
+            <li></li>
+            <li><a href="simulator.html" class="menu-item">Симулятор</a></li>
+            <li></li>
+            <li><a href="knowBase.html" class="menu-item">База знаний</a></li>
+            <li></li>
+          </ul>
+        </div>
+        <ul class="menu-main">
+          <li><a href="main.html">Главная</a></li>
+          <li><a href="theory.html">Теория</a></li>
+          <li><a href="Map.html">Структура</a></li>
+          <li><a href="simulator.html">Симулятор</a></li>
+          <li><a href="knowBase.html">База знаний</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="back-img">
+      <section class="back-container">
+        <h1>ПРИГОТОВЛЕНИЕ ПИЦЦЫ</h1>
+        <p>
+          Страсть к пицце. Удовольствие. Вкус.
+        </p>
+      </section>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="webgl-content">
+          <div id="gameContainer" style="width: 960px; height: 600px"></div>
+          <div class="footerWeb">
+            <div class="webgl-logo"></div>
+            <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+            <div class="title">Приготовление пиццы</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <p>Copyright © BSTU 2025 Zhuk Svetlana</p>
+        <p>All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>

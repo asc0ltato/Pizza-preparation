@@ -1,0 +1,274 @@
+.content-section {
+    margin: 380px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.dialog {
+    position: fixed;
+    top: 53.5%;
+    left: 1958px;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 580px;
+    padding: 20px;
+    border: 2px solid #5e2129;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #a52a2a, #7b2d2d);
+    color: #fbeeee;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    z-index: 1500;
+    font-family: 'Arial', sans-serif;
+    font-weight: 500;
+    font-size: 14pt;
+}
+
+.dialog .label {
+    position: absolute;
+    top: 50%;
+    left: -66px;
+    transform: rotate(270deg);
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    color: #fbeeee;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.dialog .headerr {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fbeeee;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dialog .history {
+    height: 400px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dialog input,
+.dialog button {
+    margin: 10px auto;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #d9b3b3;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background: #e8c8c8;
+    color: #5e2129;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.dialog input:focus,
+.dialog button:hover {
+    background: #f3d5d5;
+    outline: none;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dialog .history .question {
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(215, 135, 135, 0.8);
+    color: #5e2129;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dialog .history .answer {
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(192, 128, 128, 0.8);
+    color: #fbeeee;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dialog .history .answer img,
+.dialog .history .answer video {
+    cursor: pointer;
+    display: block;
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dialog .history .answer audio {
+    margin-top: 15px;
+}
+
+.button-quest,
+.button-quest1 {
+    padding-top: 10px;
+    text-align: center;
+    color: #fbeeee;
+}
+
+label {
+    display: inline-block;
+    color: #fbeeee;
+}
+
+.zoom-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+}
+
+.zoom-container .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.zoom-container .zoomed-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 50px auto;
+    font-size: 16px;
+    text-align: left;
+    background-color: #fdfdfd;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead th {
+    background-color: #7b2d2d;
+    color: #fbeeee;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f5e6e6;
+}
+
+td {
+    padding: 12px 15px;
+    color: #333;
+}
+
+td:first-child {
+    font-weight: bold;
+    color: #7b2d2d;
+}
+
+tfoot td {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: right;
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+    table {
+        font-size: 16px;
+    }
+
+    thead th {
+        padding: 10px 15px;
+    }
+
+    td {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    thead th {
+        padding: 8px 12px;
+    }
+
+    td {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        font-size: 12px;
+    }
+
+    thead th {
+        padding: 5px 8px;
+    }
+
+    td {
+        padding: 5px 8px;
+    }
+
+    tbody tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+    }
+
+    tbody tr td {
+        display: block;
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+        white-space: nowrap;
+    }
+
+    tbody tr td:first-child {
+        font-weight: bold;
+        color: #7b2d2d;
+        background-color: #f9f9f9;
+    }
+
+    tbody tr td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        font-weight: bold;
+        color: #7b2d2d;
+        text-transform: uppercase;
+    }
+}
